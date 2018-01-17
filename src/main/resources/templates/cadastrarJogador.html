@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"/>
+<title>Cadastrar Jogador</title>
+</head>
+<body>
+	
+	<h1>Cadastrar Jogador</h1>
+	
+	<form action="/cadastrarjogador" method="post">
+		<label for="psn">PSN: </label>
+    	<input id="psn" name="psn"/>
+    	<br/><br/>
+    	<label for="email">E-mail: </label>
+    	<input id="email" name="email"/>
+    	<br/><br/>
+    	<label for="senha">Senha: </label>
+    	<input id="senha" name="senha"/>
+    	<br/><br/>
+    	
+    	<button type="submit">Cadastrar</button>
+	</form>
+	
+</body>
+</html>
