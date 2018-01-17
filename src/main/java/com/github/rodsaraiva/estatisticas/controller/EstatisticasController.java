@@ -14,18 +14,17 @@ public class EstatisticasController {
 	@Autowired
 	private EstatisticasRepository repository;
 	
-	@RequestMapping("/cadastrarjogador")
+	@RequestMapping("/jogador/new")
 	public String cadastra() {
 		
 		return "cadastrarJogador";
 	}
 	 
-	@RequestMapping(method=RequestMethod.POST, path="/cadastrarJogador")
+	@RequestMapping(method=RequestMethod.POST, path="/jogador/save")
 	public String salvar(Jogador jogador) {
 		
 		repository.save(jogador);
 		
-		System.out.println(jogador);
 		return "cadastrarJogador";
 	}
 	
