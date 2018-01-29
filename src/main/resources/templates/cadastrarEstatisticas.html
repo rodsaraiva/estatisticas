@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
+	integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
+	crossorigin="anonymous" />
+
+<link rel="stylesheet" href="/css/estatisticas.css" />
+
+<meta charset="UTF-8" />
+<title>Cadastrar Jogador</title>
+
+</head>
+<body>
+
+	<div class="container">
+
+		<h1>Cadastrar Estatísticas</h1>
+
+		<form action="/estatisticas/new" method="post">
+
+			<div>
+
+				<h2>Informações</h2>
+
+				<div class="bottom-spacing div-width">
+
+					<div class="label-size">
+						<label for="data">Data da Partida: </label>
+					</div>
+					<div>
+						<input class="w-100" id="data" name="data" />
+					</div>
+					<div class="clearfix" />
+
+				</div>
+
+				<div class="bottom-spacing div-width">
+
+					<div class="label-size">
+						<label for="adversario">Adversário: </label>
+					</div>
+					<div>
+						<input class="w-100" id="adversario" name="adversario" />
+					</div>
+					<div class="clearfix" />
+
+				</div>
+
+				<div class="bottom-spacing div-width">
+
+					<div class="label-size">
+						<label for="competicao">Competição: </label>
+					</div>
+					<div>
+						<input class="w-100" id="competicao" name="competicao" />
+					</div>
+					<div class="clearfix" />
+
+				</div>
+
+				<div class="bottom-spacing div-width">
+
+					<div class="label-size">
+						<label for="posicao">Posição: </label>
+					</div>
+					<div>
+						<input class="w-100" id="posicao" name="posicao" />
+					</div>
+					<div class="clearfix" />
+
+				</div>
+
+			</div>
+
+		</form>
+	</div>
+
+</body>
+</html>

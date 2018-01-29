@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
+	integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
+	crossorigin="anonymous" />
+<link rel="stylesheet" href="/css/estatisticas.css" />
+<meta charset="UTF-8" />
+<title>Login</title>
+</head>
+<body>
+
+	<div class="container">
+
+
+		<div
+			class="border border-primary float-left top-spacing right-spacing">
+
+			<div>
+				<h4>Ainda não é cadastrado?</h4>
+				<p>Cadastre-se aqui</p>
+			</div>
+			<div>
+				<h4>Esqueceu sua senha?</h4>
+				<p>Recuperar senha</p>
+			</div>
+		</div>
+
+		<div class="border border-danger float-left top-spacing">
+
+			<form th:action="@{/login}" method="post">
+
+				<div class="bottom-spacing">
+					<div class="label-size">
+						<label for="psn">PSN: </label>
+					</div>
+					<div>
+						<input class="w-100" id="psn" name="username" />
+					</div>
+
+					<div class="clearfix" />
+				</div>
+
+				<div class="bottom-spacing">
+					<div class="label-size">
+						<label for="senha">Senha: </label>
+					</div>
+					<div>
+						<input type="password" class="w-100" id="senha" name="password" />
+					</div>
+
+					<div class="clearfix" />
+				</div>
+
+				<button type="submit" class="btn btn-outline-primary">Entrar</button>
+			</form>
+
+			<div th:if="${param.error}" class="alert alert-danger">
+				<span th:text="${message}" />
+			</div>
+
+		</div>
+
+	</div>
+
+</body>
+</html>

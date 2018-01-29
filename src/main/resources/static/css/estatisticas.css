@@ -1,9 +1,51 @@
 @charset "UTF-8";
 
 .label-size {
-	width: 150px;
+	width: 200px;
 }
 
 .bottom-spacing {
 	margin-bottom: 10px;
+}
+
+.top-spacing {
+	margin-top: 25px;
+}
+
+.left-spacing {
+	margin-left: 50px;
+}
+
+.right-spacing {
+	margin-right: 20px;
+}
+
+.little-right-spacing {
+	margin-right: 10px;
+}
+
+.tamanho-foto {
+	height: 250px;
+	width: 250px;
+	
+}
+
+.little-padding {
+	padding: 50px;
+
+}
+
+.little-margin {
+	margin: 2px;
+	
+}
+
+.center {
+	text-align: center;
+	
+}
+
+.div-width {
+	width: 250px;
+	
 }

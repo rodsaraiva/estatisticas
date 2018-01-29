@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
+	integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
+	crossorigin="anonymous" />
+
+<link rel="stylesheet" href="/css/estatisticas.css" />
+
+<meta charset="UTF-8" />
+<title>Perfil do Jogador</title>
+
+</head>
+<body>
+
+	<nav class="navbar bg-light">
+		<div class="container">
+			<ul class="nav nav-tabs">
+				<li class="nav-item"><a class="nav-link active" href="perfil">Perfil</a>
+				</li>
+				<li class="nav-item"><a class="nav-link" href="#">Time</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="container">
+
+		<div class="top-spacing">
+
+			<div class="float-left right-spacing">
+				<img
+					src="https://images.performgroup.com/di/library/GOAL/6c/39/neymar-psg_ldxvpsdxc3be1i63e6l7wo9ay.jpg"
+					alt="neymar-foto" class="img-thumbnail tamanho-foto"/>
+			</div>
+
+			<div class="float-left" style="margin-top: 20px">
+
+				<div class="float-left">
+					<div class="float-left border little-right-spacing">
+						<h1>Nome: </h1>
+					</div>
+					<div class="float-left border" style="padding-top: 10px">
+						<h2>[[${#httpServletRequest.remoteUser}]]</h2>
+					</div>
+				</div>
+				<div class="clearfix" />
+
+				<div class="float-left">
+					<div class="float-left border little-right-spacing">
+						<h2>PSN: </h2>
+					</div>
+					<div class="float-left border" style="padding-top: 5px">
+						<h3>ro_saraiva</h3>
+					</div>
+				</div>
+				<div class="clearfix" />
+
+				<div class="float-left">
+					<div class="float-left border little-right-spacing">
+						<h2>Posição: </h2>
+					</div>
+					<div class="float-left border" style="padding-top: 5px">
+						<h3>Zagueiro</h3>
+					</div>
+				</div>
+				<div class="clearfix" />
+
+				<div class="float-left">
+					<div class="float-left border little-right-spacing">
+						<h2>Time: </h2>
+					</div>
+					<div class="float-left border" style="padding-top: 5px">
+						<h3>Programadores</h3>
+					</div>
+				</div>
+				<div class="clearfix" />
+
+			</div>
+
+			<div class="float-right">
+
+				<div class="border center">
+					<h2>Principais conquistas</h2>
+				</div>
+
+				<div>
+
+					<div>
+						<div class="float-left border little-padding little-margin"></div>
+
+						<div class="float-left border little-padding little-margin"></div>
+
+						<div class="float-left border little-padding little-margin"></div>
+					</div>
+
+					<div>
+						<div class="float-left border little-padding little-margin"></div>
+
+						<div class="float-left border little-padding little-margin"></div>
+
+						<div class="float-left border little-padding little-margin"></div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</body>
+</html>
